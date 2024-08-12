@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40a233f47005434fbccfa0a2284d9e8, type: 3}
+  m_Name: PlaneDB
+  m_EditorClassIdentifier: 
+  planes:
+  - planeName: Plane_1
+    planeSprite: {fileID: 21300000, guid: daf152e871dd0c64289886d449d0e152, type: 3}
+    price: 0
+    isBought: 1
+  - planeName: Plane_2
+    planeSprite: {fileID: 21300000, guid: b6130de32f41d4e4e970134daac249c4, type: 3}
+    price: 1500
+    isBought: 0
+  - planeName: Plane_3
+    planeSprite: {fileID: 21300000, guid: f86cb4f0c9d171641bb598f37edd5054, type: 3}
+    price: 5000
+    isBought: 0
+  - planeName: Plane_4
+    planeSprite: {fileID: 21300000, guid: 3f93e2630bc0232418782e4c2f414c7f, type: 3}
+    price: 10000
+    isBought: 0
+  - planeName: Plane_5
+    planeSprite: {fileID: 21300000, guid: 694c5d8ab7ce317419a2947417e26053, type: 3}
+    price: 25000
+    isBought: 0
+  - planeName: Plane_6
+    planeSprite: {fileID: 21300000, guid: 132033e6e43eb2c499c9a8d06af5f6a8, type: 3}
+    price: 40000
+    isBought: 0
