@@ -99,9 +99,6 @@ public class GameManager : MonoBehaviour
         {
             totalTickets += tickets;
         }
-        else
-        {
-        }
 
         currentGameState = GameState.MainMenu;
         Time.timeScale = 0;
@@ -110,10 +107,7 @@ public class GameManager : MonoBehaviour
         {
             playerController.gameObject.SetActive(false);
         }
-        else
-        {
-        }
-        AudioManager.Instance.PlaySound("MenuMusic", musicSource);
+
         MainMenuCanvas.enabled = true;
         PauseCanvas.enabled = false;
         GameCanvas.enabled = false;
@@ -127,7 +121,6 @@ public class GameManager : MonoBehaviour
         UpdateAllDistanceDisplays();
 
         SavePlayerData();
-
     }
 
     public void UpdateDistance(float newDistance)
@@ -137,6 +130,10 @@ public class GameManager : MonoBehaviour
         UpdateAllDistanceDisplays();
 
         // Add debug log to check distance
+    }
+    public void StartMenuMusic()
+    {
+        AudioManager.Instance.PlaySound("MenuMusic", musicSource);
     }
     void UpdateAllDistanceDisplays()
     {

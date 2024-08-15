@@ -24,7 +24,7 @@ public class WebViewManager : MonoBehaviour
         ShowUrlFullScreen(feedbackUrl);
     }
 
-    private void ShowUrlFullScreen(string url)
+    public void ShowUrlFullScreen(string url)
     {
         Debug.Log("Attempting to open WebView");
         GpmWebView.ShowUrl(
@@ -33,8 +33,8 @@ public class WebViewManager : MonoBehaviour
             {
                 style = GpmWebViewStyle.FULLSCREEN,
                 orientation = GpmOrientation.UNSPECIFIED,
-                isClearCookie = true,
-                isClearCache = true,
+                isClearCookie = false,
+                isClearCache = false,
                 backgroundColor = "#FFFFFF",
                 isNavigationBarVisible = true,
                 navigationBarColor = "#4B96E6",
